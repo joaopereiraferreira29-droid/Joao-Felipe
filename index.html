@@ -21,7 +21,7 @@
             max-width: 800px;
             margin: 0 auto;
             display: flex;
-            p{
+            p.autor {
                 font-weight: bold;
             }
         }
@@ -40,9 +40,18 @@
          <img src="Joao.png" alt="imagem da aula de estudo digital">
          <div>
         <h2> exercicico 1B</h2>
-        <p> por: Joao Felipe</p>
+        <p class=" autor "> por: Joao Felipe</p>
         <p> Este site é um exercicio da aula de educação digital</p>
-         </div>
-         </main>
+        <button>🔞<span>0</span></button>
+        </div>
+        </main>
 </body>
+<script>
+    const botao = document . querySelector ("buttom");
+    botao.addEventListener ("click", botaoClicado);
+    function botaoClicado () {
+        let texto = botao.quertSector ("span");
+        texto.textCcontent++;
+    }
+</script>
 </html>
